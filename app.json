@@ -1,0 +1,25 @@
+{
+    "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org"},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org"},
+        "BOT_TOKEN": {"description": "Get this from https://t.me/botfather"},
+        "OWNER_ID": {
+            "description": "For /log cmd",
+            "required": false},
+        "AUTH_USERS": {
+            "description": "[Users Ids] No time limit for this users",
+            "required": false},
+        "TIME_GAP": {
+            "description": "Time gap after each request (in seconds)",
+            "required": false},
+        "UPDATES_CHANNEL": {
+            "description": "Bot channel ID for ForceSub, don't forget to add bot in Bot Channel",
+            "required": false}
+    },
+    "stack": "heroku-22",
+    "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "https://github.com/heroku/heroku-buildpack-apt.git"},
+        {"url": "heroku/python"}
+    ]
+}

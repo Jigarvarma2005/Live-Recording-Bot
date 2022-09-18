@@ -1,0 +1,6 @@
+pyrogram
+tgcrypto
+asyncio
+hachoir
+requests
+yt-dlp
